@@ -156,7 +156,7 @@
     font-size: 16px;
     padding-bottom: 1000px; /*dev only*/
     line-height: 1.17;
-    background: #262626;
+    background: #333;
   }
 
   a {
@@ -178,12 +178,16 @@
 .header{
     display: flex;
     justify-content: space-around;
-    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-    background: rgba(0,0,0,.8);
-    color: #ffff00;
+    background: url('../img/slider04.jpg') 0 37% /cover no-repeat;
+    color: #fff;
     padding: 10px 0;
-    position: fixed;
-    z-index: 11;
+    position: sticky;
+}
+.header-logo:hover{
+  background-color: red;
+  color:#fff;
+  border-radius: 3px;
+  padding: 2px 5px;
 }
 .search-form-input,.search-form-btn{
     border-radius: 4px;
@@ -199,11 +203,59 @@
 /*====================HEADER END=======================*/
 
 .navbar{
-    width: 200px;
-    background: rgba(0,0,0,.8);
+    width: 135px;
+    background-color: #262626;
+    color: #CAC8C8;
+}
+.navbar-nav>li:hover{
+  color:#cc9c3b
+}
+.navbar-nav-genge>li:hover{
+  color:#cc9c3b
 }
 .navbar_and_contant{
-    background: url('../img/avengers.jpg') 0 center/cover no-repeat;
-    position: absolute;
-    z-index: 1;
+  display: flex;
+}
+.navbar-nav,.navbar-nav-genge{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 5px 15px;
+  font-size: 11px;
+  border-bottom: 1px #eee solid;
+}
+.navbar-nav-genge>li:first-child{
+  text-align: center;
+  font-weight: bold;
+  color:#fff;
+  padding-bottom: 5px;
+    
+}
+.contant{
+  display: flex;
+  gap: 5px;
+  margin: 10px 10px 0 10px;
+
+}
+.contant-img{
+  height: 150px;
+  width: 99.5px;
+}
+.contant-info{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 99.5px;
+  background: #1e1e1e;
+  text-align: center;
+  padding: 8px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.title{
+  font-size: 10px;
+}
+.info{
+  font-size: 8px;
 }
