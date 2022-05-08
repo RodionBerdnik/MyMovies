@@ -14,66 +14,70 @@
     </noscript>
     <title>Fantastic beasts</title>
 </head>
-<body>
-<header class="header container">
-    <a href="/" class="header-logo">MyMovies</a>
-    <section class="search-section">
-        <form class="search-form" id="searchForm">
-            <input type="text" name="title" placeholder="Search"
-            class="search-form-input" required minlength="3">
-            <button type="submit" class="search-form-btn">GO</button>
-        </form>
-    </section>
-</header>
-<main>
-    <section class="navbar_and_contant">
-        <nav class="navbar">
-            <ul class="navbar-nav">
-            <li><a href="https://www.google.com/">Movies</a></li>
-            <li><a href="/">Series</a></li>
-            <li><a href="/">Cartoons</a></li>
-            <li><a href="/">Marvel</a></li>
-            <li><a href="/">I want to see</a></li>
-            <li><a href="/">Comming soon</a></li>
-            </ul>
-            <ul class="navbar-nav-genge">
-                <li>Genge</li>
-                <li><a href="/">Сomedy</a></li>
-                <li><a href="/">Historical</a></li>
-            </ul>
 
-        </nav>
-        <div class="contant">
-            <h1 class="title">Фантастические твари: Тайны Дамблдора (2022)</h1>
-            <div class="contant-wrap">
-                <img src="./img/fantastic beasts.webp" alt="Movie-img" width="1" height="1" loading="lazy"
-                decoding="async" class="contant-img" />
-                <ul class="contant-info">
-                  <li>Year:<span class="info"> 2022</span></li>
-                  <li>Country:<span class="info"> Great Britain, USA</span></li>
-                  <li>Genge:<span class="info"> Adventure, Family, Fantasy</span></li>
-                  <li>Actors:<span class="info"> Eddie Redmayne, Jude Law, Ezra Miller,
-                     Dan Fogler, Alison Sudol, Callum Turner, Jessica Williams, Catherine Waterston,
-                     Mads Mikkelsen, Oliver Masucci</span></li>
-                  <li>Duration:<span class="info"> 02:14:16</span></li>  
-                  <li>Description:<span class="description"> Профессор Альбус Дамблдор узнает, что могущественный темный волшебник
-                    Геллерт Грин-де-Вальд планирует захватить власть над миром. Понимая, что не сможет
-                     остановить его в одиночку, Дамблдор просит магозоолога Ньюта Саламандера возглавить
-                      команду из выдающихся волшебников и одного отважного магла-пекаря. Им предстоят
-                       невероятно опасные приключения, встреча со старыми и укрощение новых магических
-                        существ и борьба со сторонниками Грин-де-Вальда, которых становится все больше.
-                         Но какая роль в этой миссии уготована самому Дамблдору?</span> </li>
+<body>
+    <header class="header container">
+        <a href="/" class="header-logo">MyMovies</a>
+        <section class="search-section">
+            <form class="search-form" id="searchForm">
+                <input type="text" name="title" placeholder="Search" class="search-form-input" required minlength="3">
+                <button type="submit" class="search-form-btn">GO</button>
+            </form>
+        </section>
+    </header>
+    <div class="navbar_and_content">
+        <section>
+            <nav class="navbar">
+                <ul class="navbar-nav">
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Cartoons</a></li>
+                    <li><a href="#">Marvel</a></li>
+                    <li><a href="#">I want to see</a></li>
+                    <li><a href="#">Comming soon</a></li>
                 </ul>
-            </div>
-            <div class="trailer">Trailer</div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3reos8XybiA" class="video"
-                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
-</main>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="./js/app.js"></script>
+                <ul class="navbar-nav-genre">
+                    <li>Genre</li>
+                    <li><a href="#">Сomedy</a></li>
+                    <li><a href="#">Historical</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <main>
+                <div class="content">
+                    <h1 class="title">Фантастические твари: Тайны Дамблдора (2022)</h1>
+                    <div class="content-wrap">
+                        <img src="./img/fantastic_beasts.webp" alt="Movie-img" width="1" height="1" loading="lazy"
+                            decoding="async" class="content-img" />
+                        <ul class="content-info">
+                            <li>Year:<span class="info"> 2022</span></li>
+                            <li>Country:<span class="info"> Great Britain, USA</span></li>
+                            <li>Genre:<span class="info"> Adventure, Family, Fantasy</span></li>
+                            <li>Actors:<span class="info"> Eddie Redmayne, Jude Law, Ezra Miller,
+                                    Dan Fogler, Alison Sudol, Callum Turner, Jessica Williams, Catherine Waterston,
+                                    Mads Mikkelsen, Oliver Masucci</span></li>
+                            <li>Duration:<span class="info"> 02:14:16</span></li>
+                            <li>Description:<span class="description"> Профессор Альбус Дамблдор узнает, что
+                                    могущественный темный волшебник
+                                    Геллерт Грин-де-Вальд планирует захватить власть над миром. Понимая, что не сможет
+                                    остановить его в одиночку, Дамблдор просит магозоолога Ньюта Саламандера возглавить
+                                    команду из выдающихся волшебников и одного отважного магла-пекаря. Им предстоят
+                                    невероятно опасные приключения, встреча со старыми и укрощение новых магических
+                                    существ и борьба со сторонниками Грин-де-Вальда, которых становится все больше.
+                                    Но какая роль в этой миссии уготована самому Дамблдору?</span> </li>
+                        </ul>
+                    </div>
+                    <div class="trailer">Trailer</div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3reos8XybiA" class="video"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </main>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

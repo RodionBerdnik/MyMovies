@@ -1,7 +1,7 @@
 const Movie = {
     name: 'Movie',
     year: 2022,
-    genge: 'Comedy',
+    genre: 'Comedy',
     duration: 120,//mins
     description: 'A comedy about a',
     counry: 'USA',

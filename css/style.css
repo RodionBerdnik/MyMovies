@@ -202,6 +202,9 @@
 }
 /*====================HEADER END=======================*/
 
+.navbar_and_content{
+  display: flex;
+}
 .navbar{
     width: 135px;
     background-color: #262626;
@@ -210,13 +213,13 @@
 .navbar-nav>li:hover{
   color:#cc9c3b
 }
-.navbar-nav-genge>li:hover{
+.navbar-nav-genre>li:hover{
   color:#cc9c3b
 }
 .navbar_and_content{
   display: flex;
 }
-.navbar-nav,.navbar-nav-genge{
+.navbar-nav,.navbar-nav-genre{
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -224,7 +227,7 @@
   font-size: 11px;
   border-bottom: 1px #eee solid;
 }
-.navbar-nav-genge>li:first-child{
+.navbar-nav-genre>li:first-child{
   text-align: center;
   font-weight: bold;
   color:#fff;
@@ -253,6 +256,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-top: -4px;
 }
 .main-title{
   font-size: 10px;
@@ -320,4 +324,12 @@ h1.title{
 .video{
   position: absolute;
   margin-top: -2px;
+}
+.add-form{
+  margin: 50px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: url('https://yt3.ggpht.com/ytc/AKedOLQIcn7_AAtSf__9w585cZE2jUpjGV5EzPjKa2Gs=s900-c-k-c0x00ffffff-no-rj') 0 50% /cover no-repeat;;
 }

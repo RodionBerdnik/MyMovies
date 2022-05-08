@@ -25,7 +25,6 @@
             </form>
         </section>
     </header>
-    <div class="navbar_and_content">
         <section>
             <nav class="navbar">
                 <ul class="navbar-nav">
@@ -43,35 +42,44 @@
                 </ul>
             </nav>
         </section>
-        <section>
-            <main>
-                <div class="content">
-                    <div class="content-main">
-                        <a href="./fantastic_beats.html">
-                            <div class="content-main-wrap">
-                                <img src="./img/fantastic_beasts.webp" alt="Movie-img" width="1" height="1" loading="lazy"
-                                    decoding="async" class="content-main-img" />
-                                <div class="content-main-info">
-                                    <h2 class="main-title">Фантастические твари: Тайны Дамблдора (2022)</h2>
-                                    <h3 class="main-info">2022, Приключения</h3>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="content-main-wrap">
-                            <img src="./img/sonic 2.webp" alt="Movie-img" width="1" height="1" loading="lazy"
-                                decoding="async" class="content-main-img" />
-                            <div class="content-main-info">
-                                <h2 class="main-title">Соник 2 (2022)</h2>
-                                <h3 class="main-info">2022, Комедия</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </section>
-    </div>
+        <main>
+            <form class="add-form" id="addForm">
+                <input type="text" name="name" placeholder="Name">
+                <input type="number" name="year" placeholder="Year">
+                <input type="text" name="genre" placeholder="Genre">
+                <input type="text" name="description" placeholder="Description">
+                <input type="url" name="poster" placeholder="Poster">
+                <input type="url" name="trailer" placeholder="Trailer">
+                <input type="number" name="duration" placeholder="Duration">
+                <input type="text" name="counry" placeholder="Counry">
+                <input type="text" name="director" placeholder="Director">
+                <input type="text" name="actors" placeholder="Actors">
+                <input type="number" name="raiting" placeholder="Raiting" min="0" max="10" step="0.1">
+                <label>
+                    <span>type</span>
+                    <select name="type">
+                        <option selected value="movie">Movie</option>
+                        <option value="series">Series</option>
+                        <option value="cartoon">Cartoon</option>
+                    </select>
+                </label>
+                <textarea name="comment" placeholder="comment"></textarea>
+                <label>
+                    <input type="checkbox" name="comingSoon">
+                    <span>comingSoon</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="watched">
+                    <span>watched</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="favourite">
+                    <span>favourite</span>
+                </label>
+                <button type="submit">Add</button>
+            </form>
+        </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
-
 </html>
