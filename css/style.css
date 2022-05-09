@@ -242,13 +242,14 @@
 }
 .content-main-img{
   height: 150px;
-  width: 99.5px;
+  width: 100px;
+  object-fit: cover;
 }
 .content-main-info{
   display: flex;
   flex-direction: column;
   gap: 2px;
-  width: 99.5px;
+  width: 100px;
   background: #1e1e1e;
   text-align: center;
   padding: 8px;
@@ -331,5 +332,6 @@ h1.title{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: url('https://yt3.ggpht.com/ytc/AKedOLQIcn7_AAtSf__9w585cZE2jUpjGV5EzPjKa2Gs=s900-c-k-c0x00ffffff-no-rj') 0 50% /cover no-repeat;;
+  background-color: rgb(192, 16, 16);
+  padding: 20px;
 }

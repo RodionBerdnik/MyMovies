@@ -15,5 +15,5 @@ const Movie = {
     comingSoon: false,
     type: 'movie',
     comment: 'lorem ipsum',
-    id: 1,
+    // id: 1,
 }
