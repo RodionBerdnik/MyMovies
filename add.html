@@ -44,20 +44,20 @@
         </section>
         <main>
             <form class="add-form" id="addForm">
-                <input type="text" name="name" placeholder="Name">
-                <input type="number" name="year" placeholder="Year">
-                <input type="text" name="genre" placeholder="Genre">
-                <input type="text" name="description" placeholder="Description">
-                <input type="url" name="poster" placeholder="Poster">
-                <input type="url" name="trailer" placeholder="Trailer">
-                <input type="number" name="duration" placeholder="Duration">
-                <input type="text" name="country" placeholder="Country">
-                <input type="text" name="director" placeholder="Director">
-                <input type="text" name="actors" placeholder="Actors">
+                <input type="text" name="name" required placeholder="Name">
+                <input type="number" name="year" required placeholder="Year">
+                <input type="text" name="genre" required placeholder="Genre">
+                <input type="text" name="description" required placeholder="Description">
+                <input type="url" name="poster" required placeholder="Poster">
+                <input type="url" name="trailer" required placeholder="Trailer">
+                <input type="number" name="duration" required placeholder="Duration">
+                <input type="text" name="country" required placeholder="Country">
+                <input type="text" name="director" required placeholder="Director">
+                <input type="text" name="actors" required placeholder="Actors">
                 <input type="number" name="raiting" placeholder="Raiting" min="0" max="10" step="0.1">
                 <label>
                     <span>type</span>
-                    <select name="type">
+                    <select required name="type">
                         <option selected value="movie">Movie</option>
                         <option value="series">Series</option>
                         <option value="cartoon">Cartoon</option>
@@ -69,17 +69,17 @@
                     <span>comingSoon</span>
                 </label>
                 <label>
-                    <input type="checkbox" name="watched">
+                    <input type="checkbox" required name="watched">
                     <span>watched</span>
                 </label>
                 <label>
-                    <input type="checkbox" name="favorite">
+                    <input type="checkbox" required name="favorite">
                     <span>favorite</span>
                 </label>
                 <button type="submit">Add</button>
             </form>
         </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/add.js"></script>
 </body>
 </html>
