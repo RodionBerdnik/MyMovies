@@ -30,7 +30,7 @@ addForm.addEventListener("submit", (e) => {
 //     genre: "Comedy",
 //     duration: 120, //mins
 //     description: "A comedy about a",
-//     counry: "USA",
+//     country: "USA",
 //     actors: "Tom Cruise, Tom Holland",
 //     director: "Steven Spielberg",
 //     poster:
