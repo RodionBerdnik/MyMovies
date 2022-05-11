@@ -275,7 +275,7 @@ h1.title{
 }
 .content-img{
   height: 240px;
-  width: 170px;
+  width: 160px;
 }
 .content-wrap{
   display: flex;
@@ -334,4 +334,24 @@ h1.title{
   gap: 10px;
   background-color: rgb(192, 16, 16);
   padding: 20px;
+}
+
+.poster-wrap{
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-rating{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 160px;
+  background: #1e1e1e;
+  text-align: center;
+  padding: 8px;
+  color: #fff;
+  font-size: 12px;
+}
+.rating-stars{
+  color: #cc9c3b;
 }

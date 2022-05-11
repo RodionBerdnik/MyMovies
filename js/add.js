@@ -1,4 +1,5 @@
 import { createMovie } from "./api.js";
+import { formatTrailerURL } from "./formatTrailerString.js";
 
 const addForm = document.getElementById("addForm");
 
@@ -15,7 +16,7 @@ addForm.addEventListener("submit", (e) => {
       actors: e.target.actors.value,
       director: e.target.director.value,
       poster: e.target.poster.value,
-      trailer: e.target.trailer.value,
+      trailer: formatTrailerURL(e.target.trailer.value),
       rating: Number(e.target.raiting.value),
       watched: e.target.watched.checked,
       favorite: e.target.favorite.checked,
