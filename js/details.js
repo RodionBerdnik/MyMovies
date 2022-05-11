@@ -11,11 +11,26 @@ getMovie(movieId).then((movie)=>{
     console.warn(movieError)
 })
 
+
 function renderMovie(movie) {
-    const movieHTML= `<h1 class="title">${movie.name}</h1>
+    let starIcons = "";
+    for (let i = 0; i < 10; i++) {
+      if (movie.raiting > i) {
+        starIcons += '<i class="fas fa-star"></i>';
+      } else {
+        starIcons += '<i class="far fa-star"></i>';
+      }
+  }
+  const movieHTML = `<h1 class="title">${movie.name}</h1>
 <div class="content-wrap">
-    <img src="${movie.poster}" alt="${movie.name}" width="16" height="24"
+    <div class="poster-wrap">
+        <img src="${movie.poster}" alt="${movie.name}" width="2" height="3"
         decoding="async" class="content-img" />
+    <div class="movie-rating">
+        <h3 class="rating-stars">${starIcons}</h3>
+        <h3>Grade: ${movie.raiting}</h3>   
+    </div>
+</div>
     <ul class="content-info">
         <li>Year:<span class="info"> ${movie.year}</span></li>
         <li>Country:<span class="info"> ${movie.country}</span></li>
@@ -29,6 +44,7 @@ function renderMovie(movie) {
 <div class="trailer">Trailer</div>
 <iframe loading="lazy" width="560" height="315" src="${movie.trailer}" class="video"
     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-  render(movieHTML, content)
+  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+  render(movieHTML, content);
 }
+
