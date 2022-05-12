@@ -21,7 +21,7 @@ function renderMovies(movies, movieListElem) {
     .map((movie) => {
       return `<a href="./details.html#${movie.id}">
         <div class="content-main-wrap">
-            <img src="${movie.poster}" alt="${movie.name}" width="2" height="3"
+            <img src="${movie.poster}" alt="${movie.name}" width="121" height="179"
                 decoding="async" class="content-main-img" />
             <div class="content-main-info">
                 <h2 class="main-title">${movie.name}</h2>

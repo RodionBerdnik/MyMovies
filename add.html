@@ -17,32 +17,30 @@
 
 <body>
     <header class="header container">
-        <a href="#" class="header-logo">MyMovies</a>
-        <section class="search-section">
+        <div class="logo-section"><a href="/" class="header-logo">MyMovies</a></div>
+        <div class="search-section">
             <form class="search-form" id="searchForm">
                 <input type="text" name="title" placeholder="Search" class="search-form-input" required minlength="3">
-                <button type="submit" class="search-form-btn">GO</button>
             </form>
-        </section>
+        </div>
     </header>
-        <section>
-            <nav class="navbar">
-                <ul class="navbar-nav">
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Cartoons</a></li>
-                    <li><a href="#">Marvel</a></li>
-                    <li><a href="#">I want to see</a></li>
-                    <li><a href="#">Comming soon</a></li>
-                </ul>
-                <ul class="navbar-nav-genre">
-                    <li>Genre</li>
-                    <li><a href="#">Сomedy</a></li>
-                    <li><a href="#">Historical</a></li>
-                </ul>
-            </nav>
-        </section>
-        <main>
+    <main class="main container">
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li><a href="/">Movies</a></li>
+                <li><a href="/">Series</a></li>
+                <li><a href="/">Cartoons</a></li>
+                <li><a href="/">Marvel</a></li>
+                <li><a href="/">I want to see</a></li>
+                <li><a href="/">Comming soon</a></li>
+                <li><a href="./add.html">Add movie</a></li>
+            </ul>
+            <ul class="navbar-nav-genre">
+                <li>Genre</li>
+                <li><a href="#">Сomedy</a></li>
+                <li><a href="#">Historical</a></li>
+            </ul>
+        </nav>
             <form class="add-form" id="addForm">
                 <input type="text" name="name" required placeholder="Name">
                 <input type="number" name="year" required placeholder="Year">
@@ -63,7 +61,7 @@
                         <option value="cartoon">Cartoon</option>
                     </select>
                 </label>
-                <textarea name="comment" placeholder="comment"></textarea>
+                <textarea name="comment" placeholder="comment" class="comments"></textarea>
                 <label>
                     <input type="checkbox" name="comingSoon">
                     <span>comingSoon</span>
@@ -78,7 +76,7 @@
                 </label>
                 <button type="submit">Add</button>
             </form>
-        </main>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/add.js"></script>
 </body>

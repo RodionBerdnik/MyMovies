@@ -17,34 +17,30 @@
 
 <body>
     <header class="header container">
-        <a href="/" class="header-logo">MyMovies</a>
-        <section class="search-section">
+        <div class="logo-section"><a href="/" class="header-logo">MyMovies</a></div>
+        <div class="search-section">
             <form class="search-form" id="searchForm">
                 <input type="text" name="title" placeholder="Search" class="search-form-input" required minlength="3">
-                <button type="submit" class="search-form-btn">GO</button>
             </form>
-        </section>
+        </div>
     </header>
-    <div class="navbar_and_content">
-        <section>
-            <nav class="navbar">
-                <ul class="navbar-nav">
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Cartoons</a></li>
-                    <li><a href="#">Marvel</a></li>
-                    <li><a href="#">I want to see</a></li>
-                    <li><a href="#">Comming soon</a></li>
-                </ul>
-                <ul class="navbar-nav-genre">
-                    <li>Genre</li>
-                    <li><a href="#">Сomedy</a></li>
-                    <li><a href="#">Historical</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <main>
+    <main class="main container">
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li><a href="/">Movies</a></li>
+                <li><a href="/">Series</a></li>
+                <li><a href="/">Cartoons</a></li>
+                <li><a href="/">Marvel</a></li>
+                <li><a href="/">I want to see</a></li>
+                <li><a href="/">Comming soon</a></li>
+                <li><a href="./add.html">Add movie</a></li>
+            </ul>
+            <ul class="navbar-nav-genre">
+                <li>Genre</li>
+                <li><a href="#">Сomedy</a></li>
+                <li><a href="#">Historical</a></li>
+            </ul>
+        </nav>
                 <div class="content" id="content">
                     <!-- <h1 class="title">Фантастические твари: Тайны Дамблдора (2022)</h1>
                     <div class="content-wrap">
@@ -74,8 +70,6 @@
                       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 </div>
             </main>
-        </section>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./js/details.js"></script>
 </body>

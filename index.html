@@ -17,59 +17,53 @@
 
 <body>
     <header class="header container">
-        <a href="#" class="header-logo">MyMovies</a>
-        <section class="search-section">
+        <div class="logo-section"><a href="/" class="header-logo">MyMovies</a></div>
+        <div class="search-section">
             <form class="search-form" id="searchForm">
                 <input type="text" name="title" placeholder="Search" class="search-form-input" required minlength="3">
-                <button type="submit" class="search-form-btn">GO</button>
             </form>
-        </section>
+        </div>
     </header>
-    <div class="navbar_and_content">
-        <section>
-            <nav class="navbar">
-                <ul class="navbar-nav">
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Cartoons</a></li>
-                    <li><a href="#">Marvel</a></li>
-                    <li><a href="#">I want to see</a></li>
-                    <li><a href="#">Comming soon</a></li>
-                </ul>
-                <ul class="navbar-nav-genre">
-                    <li>Genre</li>
-                    <li><a href="#">Сomedy</a></li>
-                    <li><a href="#">Historical</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <main>
-                <div class="content">
-                    <div class="content-main" id="movieList">
-                        <!-- <a href="./details.html#">
-                            <div class="content-main-wrap">
-                                <img src="./img/fantastic_beasts.webp" alt="Movie-img" width="1" height="1" loading="lazy"
-                                    decoding="async" class="content-main-img" />
-                                <div class="content-main-info">
-                                    <h2 class="main-title">Фантастические твари: Тайны Дамблдора (2022)</h2>
-                                    <h3 class="main-info">2022, Приключения</h3>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="content-main-wrap">
-                            <img src="./img/sonic 2.webp" alt="Movie-img" width="1" height="1" loading="lazy"
-                                decoding="async" class="content-main-img" />
-                            <div class="content-main-info">
-                                <h2 class="main-title">Соник 2 (2022)</h2>
-                                <h3 class="main-info">2022, Комедия</h3>
-                            </div>
-                        </div> -->
+    <main class="main container">
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li><a href="/">Movies</a></li>
+                <li><a href="/">Series</a></li>
+                <li><a href="/">Cartoons</a></li>
+                <li><a href="/">Marvel</a></li>
+                <li><a href="/">I want to see</a></li>
+                <li><a href="/">Comming soon</a></li>
+                <li><a href="./add.html">Add movie</a></li>
+            </ul>
+            <ul class="navbar-nav-genre">
+                <li>Genre</li>
+                <li><a href="#">Сomedy</a></li>
+                <li><a href="#">Historical</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="content-main" id="movieList">
+                <!-- <a href="./details.html#">
+                    <div class="content-main-wrap">
+                        <img src="./img/fantastic_beasts.webp" alt="Movie-img" width="1" height="1" loading="lazy"
+                            decoding="async" class="content-main-img" />
+                        <div class="content-main-info">
+                            <h2 class="main-title">Фантастические твари: Тайны Дамблдора (2022)</h2>
+                            <h3 class="main-info">2022, Приключения</h3>
+                        </div>
                     </div>
-                </div>
-            </main>
-        </section>
-    </div>
+                </a>
+                <div class="content-main-wrap">
+                    <img src="./img/sonic 2.webp" alt="Movie-img" width="1" height="1" loading="lazy"
+                        decoding="async" class="content-main-img" />
+                    <div class="content-main-info">
+                        <h2 class="main-title">Соник 2 (2022)</h2>
+                        <h3 class="main-info">2022, Комедия</h3>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./js/main.js"></script>
 </body>
