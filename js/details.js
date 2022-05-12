@@ -13,14 +13,17 @@ getMovie(movieId).then((movie)=>{
 
 
 function renderMovie(movie) {
-    let starIcons = "";
+    let starIcons = ""; 
+    const halfIcons = '<i class="fas fa-star-half-alt"></i>';
     for (let i = 0; i < 10; i++) {
-      if (movie.raiting > i) {
+     if (movie.raiting > i) {
         starIcons += '<i class="fas fa-star"></i>';
-      } else {
-        starIcons += '<i class="far fa-star"></i>';
       }
-  }
+      else{
+        starIcons=starIcons+'<i class="fas fa-star-half-alt"></i>'
+      }
+    }
+
   const movieHTML = `<h1 class="title">${movie.name}</h1>
 <div class="content-wrap">
     <div class="poster-wrap">
