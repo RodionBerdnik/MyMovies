@@ -14,20 +14,6 @@ getMovie(movieId).then((movie)=>{
 
 function renderMovie(movie) {
     let starIcons = "";
-    // const stars= 6.5 
-    // let a=(10-stars-0.5)
-    // const halfIcons = '<i class="fas fa-star-half-alt"></i>';
-    // if(stars/2 !=0){
-    //   for (let i = 0; i < 10; i++) {
-    //     if (stars-0.5 > i) {
-    //        starIcons += '<i class="fas fa-star"></i>';
-    //      }
-    //        starIcons = starIcons+'<i class="fas fa-star-half-alt"></i>'
-    //        else{
-
-    //        }
-    //     }
-    // }
     if(movie.rating%1==0){
       for (let i = 0; i < 10; i++) {
         if (movie.rating > i) {

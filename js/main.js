@@ -1,19 +1,30 @@
 import { getMovies } from "./api.js";
 import { render } from "./render.js";
 
-const movieList = document.getElementById("movieList"); 
-let MOVIES = [];
-start();
+window.addEventListener("hashchange", (e) => {
+  const moviesType = window.location.hash.slice(1);
+  start({ type: moviesType });
+});
 
-function start() {
-    getMovies()
+const movieList = document.getElementById("movieList");
+let MOVIES = [];
+
+const moviesType = window.location.hash.slice(1);
+start({ type: moviesType });
+
+function start({ type }) {
+  const params = {};
+  if (type) {
+    params.type = type;
+  }
+  getMovies(params)
     .then((movies) => {
-        MOVIES = movies;
-        renderMovies(MOVIES, movieList)
-      })
-      .catch((moviesError) => {
-        console.warn(moviesError);
-      });
+      MOVIES = movies;
+      renderMovies(MOVIES, movieList);
+    })
+    .catch((moviesError) => {
+      console.warn(moviesError);
+    });
 }
 
 function renderMovies(movies, movieListElem) {

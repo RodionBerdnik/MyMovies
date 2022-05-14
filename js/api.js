@@ -13,11 +13,11 @@ const api = axios.create({
   //     (err) => [err, null]
   //   );
   
-  export function getMovies() {
-    return api.get("/movies");
+  export function getMovies(params) {
+    return api.get("/movies", {params});
   }
-  export function getMovie(id) {
-    return api.get("/movies/" + id);
+  export function getMovie(id, params) {
+    return api.get("/movies/" + id, {params});
   }
   export function createMovie(movieData) {
     return api.post("/movies", movieData);
