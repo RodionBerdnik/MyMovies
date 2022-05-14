@@ -13,15 +13,43 @@ getMovie(movieId).then((movie)=>{
 
 
 function renderMovie(movie) {
-    let starIcons = ""; 
-    const halfIcons = '<i class="fas fa-star-half-alt"></i>';
-    for (let i = 0; i < 10; i++) {
-     if (movie.raiting > i) {
-        starIcons += '<i class="fas fa-star"></i>';
-      }
-      else{
-        starIcons=starIcons+'<i class="fas fa-star-half-alt"></i>'
-      }
+    let starIcons = "";
+    // const stars= 6.5 
+    // let a=(10-stars-0.5)
+    // const halfIcons = '<i class="fas fa-star-half-alt"></i>';
+    // if(stars/2 !=0){
+    //   for (let i = 0; i < 10; i++) {
+    //     if (stars-0.5 > i) {
+    //        starIcons += '<i class="fas fa-star"></i>';
+    //      }
+    //        starIcons = starIcons+'<i class="fas fa-star-half-alt"></i>'
+    //        else{
+
+    //        }
+    //     }
+    // }
+    if(movie.rating%1==0){
+      for (let i = 0; i < 10; i++) {
+        if (movie.rating > i) {
+           starIcons += '<i class="fas fa-star"></i>';
+         }
+         else{
+           starIcons+='<i class="far fa-star"></i>';
+         }
+       }
+    }
+    else{
+      for (let i = 0; i < 10; i++) {
+        if (Math.floor(movie.rating) > i) {
+           starIcons += '<i class="fas fa-star"></i>';
+         }
+         if(Math.floor(movie.rating) == i){
+          starIcons += '<i class="fas fa-star-half-alt"></i>';
+         }
+         if(Math.floor(movie.rating) < i){
+           starIcons+='<i class="far fa-star"></i>';
+         }
+       }
     }
 
   const movieHTML = `<h1 class="title">${movie.name}</h1>
@@ -31,7 +59,7 @@ function renderMovie(movie) {
         decoding="async" class="content-img" />
     <div class="movie-rating">
         <h3 class="rating-stars">${starIcons}</h3>
-        <h3>Grade: ${movie.raiting}</h3>   
+        <h3>Grade: ${movie.rating}</h3>   
     </div>
 </div>
     <ul class="content-info">
@@ -50,4 +78,3 @@ function renderMovie(movie) {
   encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
   render(movieHTML, content);
 }
-
