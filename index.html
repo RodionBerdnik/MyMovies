@@ -18,11 +18,10 @@
 <body>
     <header class="header container">
         <div class="logo-section"><a href="/" class="header-logo">MyMovies</a></div>
-        <div class="search-section">
-            <form class="search-form" id="searchForm">
-                <input type="text" name="title" placeholder="Search" class="search-form-input" required minlength="3">
-            </form>
-        </div>
+            <div class="search-wrap" id="searchWrap">
+                <input type="search" name="title" placeholder="Search"
+                 class="search-input" id="searchInput">
+            </div>
     </header>
     <main class="main container">
         <nav class="navbar">
@@ -41,7 +40,6 @@
                 <li><a href="#">Historical</a></li>
             </ul>
         </nav>
-        <div class="content">
             <div class="content-main" id="movieList">
                 <!-- <a href="./details.html#">
                     <div class="content-main-wrap">
@@ -62,10 +60,10 @@
                     </div>
                 </div> -->
             </div>
-        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./js/main.js"></script>
+    <script src="./js/search.js"></script>
 </body>
 
 </html>
