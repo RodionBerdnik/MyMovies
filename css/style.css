@@ -199,13 +199,13 @@
   align-items: center;
   width: 30%;
 }
-.search-section{
+.search-wrap{
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 60%;
 }
-.search-form-input{
+.search-input{
   width: 230px;
   height: 30px;
   border-radius: 4px;
@@ -250,14 +250,11 @@
 /*====================NAVBAR END=======================*/
 
 /*====================CONTENT START=======================*/
-
-.content{
-  margin: 20px 10px 0 20px;
-}
 .content-main{
   display: flex;
   gap: 35px;
   flex-wrap: wrap;
+  margin: 20px 10px 0 20px;
 }
 .content-main-img{
   width: 240px;
@@ -291,6 +288,9 @@ h1.title{
   color: #fff;
   font-size: 36px;
   margin-bottom: 10px;
+}
+.content{
+  margin: 20px 10px 0 20px;
 }
 .content-img{
   height: 240px;
