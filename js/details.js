@@ -14,7 +14,7 @@ getMovie(movieId).then((movie)=>{
 
 function renderMovie(movie) {
     let starIcons = "";
-    if(movie.rating%1==0){
+    if(Number.isInteger(movie.rating)){
       for (let i = 0; i < 10; i++) {
         if (movie.rating > i) {
            starIcons += '<i class="fas fa-star"></i>';
