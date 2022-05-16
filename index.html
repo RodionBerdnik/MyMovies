@@ -17,11 +17,11 @@
 
 <body>
     <header class="header container">
-        <div class="logo-section"><a href="/" class="header-logo">MyMovies</a></div>
-            <div class="search-wrap" id="searchWrap">
-                <input type="search" name="title" placeholder="Search"
-                 class="search-input" id="searchInput">
-            </div>
+            <a href="/" class="header-logo">MyMovies</a>
+        <div class="search-wrap" id="searchWrap">
+            <input type="search" name="title" autocomplete="off" placeholder="Search" class="search-input" id="searchInput">
+            <ul class="suggestions-list" id="searchSuggestions"><!-- <li><a href="#"></a></li> --></ul>
+        </div>
     </header>
     <main class="main container">
         <nav class="navbar">
@@ -40,8 +40,8 @@
                 <li><a href="#">Historical</a></li>
             </ul>
         </nav>
-            <div class="content-main" id="movieList">
-                <!-- <a href="./details.html#">
+        <div class="content-main" id="movieList">
+            <!-- <a href="./details.html#">
                     <div class="content-main-wrap">
                         <img src="./img/fantastic_beasts.webp" alt="Movie-img" width="1" height="1" loading="lazy"
                             decoding="async" class="content-main-img" />
@@ -59,11 +59,11 @@
                         <h3 class="main-info">2022, Комедия</h3>
                     </div>
                 </div> -->
-            </div>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./js/main.js"></script>
-    <script src="./js/search.js"></script>
+    <script type="module" src="./js/search.js"></script>
 </body>
 
 </html>
