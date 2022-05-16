@@ -27,7 +27,10 @@ function searchMovies(searchValue){
 
 function renderSuggestions(movies){
     const movieHTML = movies.map(movie=>{
-        return `<li><a href="/details.html#${movie.id}">${movie.name}</a></li>`
+        return `<li>
+        <a class="suggestions" href="/details.html#${movie.id}"><img class="suggestions-img" src="${movie.poster}" alt="${movie.name}">
+        <h4>${movie.name} (${movie.year})</h4>
+        </a></li>`
     }).join('');
     render(movieHTML, searchSuggestions);
 }

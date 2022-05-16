@@ -205,20 +205,36 @@
   height: 30px;
   border-radius: 4px;
   border: 1px solid black;
+  background-color: #333;
+  color: #CAC8C8;
 }
 .suggestions-list{
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 100%;
   top: 100%;
   left: 0;
-  background-color: #fff;
+  background-color: #1e1e1e;
   padding: 10px;
-  color: #000;
+  color: #CAC8C8;
   position: absolute;
   border-radius: 6px;
+  font-weight: 600;
 
 }
 .suggestions-list:empty{
   display: none;
+}
+.suggestions{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space:nowrap;
+}
+.suggestions-img{
+width: 50px;
+height: 70px;
 }
 /*====================HEADER END=======================*/
 
