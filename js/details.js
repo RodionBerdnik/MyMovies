@@ -12,6 +12,7 @@ getMovie(movieId).then((movie)=>{
 })
 
 
+
 function renderMovie(movie) {
     let starIcons = "";
     if(Number.isInteger(movie.rating)){
@@ -37,6 +38,14 @@ function renderMovie(movie) {
          }
        }
     }
+    let min=movie.duration
+    let hours 
+    let minutes
+    hours=Math.floor(min/60)
+    if(min%hours==0){
+      minutes=min%60
+    }
+
 
   const movieHTML = `<h1 class="title">${movie.name}</h1>
 <div class="content-wrap">
@@ -54,7 +63,7 @@ function renderMovie(movie) {
         <li>Genre:<span class="info"> ${movie.genre}</span></li>
         <li>Director:<span class="info"> ${movie.director}</span></li>
         <li>Actors:<span class="info"> ${movie.actors}</span></li>
-        <li>Duration:<span class="info"> ${movie.duration} min</span></li>
+        <li>Duration:<span class="info"> 0${hours}:${minutes}</span></li>
         <li>Description:<span class="description"> ${movie.description}</span> </li>
     </ul>
 </div>
