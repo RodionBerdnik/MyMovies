@@ -12,6 +12,7 @@ searchInput.addEventListener('input', (e)=>{
     debouncedSearchMovies(searchValue) 
 });
 
+
 function searchMovies(searchValue){
     if(searchValue) {
         getMovies({q: searchValue})
@@ -28,12 +29,13 @@ function searchMovies(searchValue){
 function renderSuggestions(movies){
     const movieHTML = movies.map(movie=>{
         return `<li>
-        <a class="suggestions" href="/details.html#${movie.id}"><img class="suggestions-img" src="${movie.poster}" alt="${movie.name}">
+        <a class="suggestions" href="/details.html#${movie.id}"><img class="suggestions-img" width="2" height="3" src="${movie.poster}" alt="${movie.name}">
         <h4>${movie.name} (${movie.year})</h4>
         </a></li>`
     }).join('');
     render(movieHTML, searchSuggestions);
 }
+
 
 export function asyncDebouce(delay, fn){
     let timer  = null;

@@ -318,8 +318,8 @@ h1.title{
   margin: 20px 10px 0 20px;
 }
 .content-img{
-  height: 240px;
-  width: 160px;
+  height: 385px;
+  width: 260px;
   object-fit: cover;
 }
 .content-wrap{
@@ -335,12 +335,12 @@ h1.title{
 }
 .content-info>li{
   color: #CAC8C8;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 500;
 }
 .info{
   color: #cc9c3b;
-  font-size: 16px;
+  font-size: 21px;
 }
 .info:hover{
   text-decoration: underline;
@@ -348,7 +348,7 @@ h1.title{
 .description{
   color: #fff;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 21px;
 }
 .trailer{
   display: flex;
@@ -359,10 +359,10 @@ h1.title{
   color:#fff;
   padding: 10px 15px;
   border-radius: 3px;
-  width: 100px;
-  height: 25px;
+  width: 145px;
+  height: 40px;
   position: relative;
-  font-size: 12px;
+  font-size: 22px;
 }
 .trailer:hover{
   color:#cc9c3b;
@@ -371,16 +371,6 @@ h1.title{
   position: absolute;
   margin-top: -2px;
 }
-.add-form{
-  margin: 50px auto;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: rgb(192, 16, 16);
-  padding: 20px;
-}
-
 .poster-wrap{
   display: flex;
   flex-direction: column;
@@ -390,15 +380,16 @@ h1.title{
   display: flex;
   flex-direction: column;
   gap: 2px;
-  width: 160px;
+  width: 260px;
   background: #1e1e1e;
   text-align: center;
   padding: 8px;
   color: #fff;
-  font-size: 12px;
+  font-size: 20px;
 }
 .rating-stars{
   color: #cc9c3b;
+  font-size: 18px;
 }
 /*====================DETAILS END=======================*/
 
@@ -407,5 +398,33 @@ h1.title{
   resize: vertical;
   min-height: 100px;
   max-height: 200px;
+}
+.add-form{
+  margin: 50px auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(192, 16, 16);
+  padding: 20px;
+}
+.input-add{
+  min-height: 30px;
+  color: black;
+  font-size: 22px;
+}
+.add-form-text{
+  font-size: 22px;
+  color: white;
+}
+.add-button{
+  display: flex;
+  justify-content: center;
+}
+.button{
+  width: 170px;
+  height: 45px;
+  border-radius: 6px;
+  border: none;
 }
 /*====================ADD END=======================*/

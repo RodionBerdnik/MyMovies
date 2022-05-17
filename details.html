@@ -17,11 +17,12 @@
 
 <body>
     <header class="header container">
-        <div class="logo-section"><a href="/" class="header-logo">MyMovies</a></div>
-            <div class="search-wrap" id="searchForm">
-                <input type="search" name="title" placeholder="Search" class="search-input">
-            </div>
-    </header>
+        <a href="/" class="header-logo">MyMovies</a>
+    <div class="search-wrap" id="searchWrap">
+        <input type="search" name="title" autocomplete="off" placeholder="Search" class="search-input" id="searchInput">
+        <ul class="suggestions-list" id="searchSuggestions"></ul>
+    </div>
+</header>
     <main class="main container">
         <nav class="navbar">
             <ul class="navbar-nav">
