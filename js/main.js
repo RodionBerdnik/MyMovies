@@ -1,22 +1,20 @@
-import { getMovies } from "./api.js";
-import { render } from "./render.js";
+import { getMovies } from "./services/api.js";
+import { render } from "./helpers/render.js";
+import { serializationParam } from "./helpers/serializationParam.js";
 
 window.addEventListener("hashchange", (e) => {
-  const moviesType = window.location.hash.slice(1);
-  start({ type: moviesType });
+  start();
 });
 
 const movieList = document.getElementById("movieList");
 let MOVIES = [];
 
-const moviesType = window.location.hash.slice(1);
-start({ type: moviesType });
+start();
 
-function start({ type }) {
-  const params = {};
-  if (type) {
-    params.type = type;
-  }
+function start() {
+  const param = serializationParam(window.location.hash.slice(1));
+ console.log(param)
+  let params = {...param};
   getMovies(params)
     .then((movies) => {
       MOVIES = movies;

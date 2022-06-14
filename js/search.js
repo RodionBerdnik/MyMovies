@@ -1,5 +1,5 @@
-import { getMovies } from "./api.js";
-import { render } from "./render.js";
+import { getMovies } from "./services/api.js";
+import { render } from "./helpers/render.js";
 
 const searchWrap = document.getElementById('searchWrap');
 const searchInput = document.getElementById('searchInput');

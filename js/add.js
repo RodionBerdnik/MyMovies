@@ -1,5 +1,5 @@
-import { createMovie } from "./api.js";
-import { formatTrailerURL } from "./formatTrailerString.js";
+import { createMovie } from "./services/api.js";
+import { formatTrailerURL } from "./helpers/formatTrailerString.js";
 
 const addForm = document.getElementById("addForm");
 

@@ -1,16 +1,23 @@
-import { getMovie } from "./api.js";
-import { pipeDuration } from "./pipeDuration.js";
-import { render } from "./render.js";
+import { getMovie } from "./services/api.js";
+import { pipeDuration } from "./helpers/pipeDuration.js";
+import { render } from "./helpers/render.js";
 
-const movieId = window.location.hash.slice(1)
+window.addEventListener("hashchange", (e) => {
+  start();
+});
 const content = document.getElementById("content"); 
+start()
 
-getMovie(movieId).then((movie)=>{
+function start() {
+  const movieId = window.location.hash.slice(1)
+
+  getMovie(movieId).then((movie)=>{
     renderMovie(movie);
 }).catch((movieError)=>{
     alert('Error gettig movie');
     console.warn(movieError)
-})
+});
+}
 
 
 
@@ -26,12 +33,12 @@ function renderMovie(movie) {
     </div>
 </div>
     <ul class="content-info">
-        <li>Year:<span class="info"> ${movie.year}</span></li>
-        <li>Country:<span class="info"> ${movie.country}</span></li>
-        <li>Genre:<span class="info"> ${movie.genre}</span></li>
-        <li>Director:<span class="info"> ${movie.director}</span></li>
-        <li>Actors:<span class="info"> ${movie.actors}</span></li>
-        <li>Duration:<span class="info"> ${pipeDuration(movie.duration)}</span></li>
+        <li>Year:<a href="/#year=${movie.year}" class="info"> ${movie.year}</a></li>
+        <li>Country:<a href="/#country=${movie.country}" class="info"> ${movie.country}</a></li>
+        <li>Genre:<a href="/#genre=${movie.genre}" class="info"> ${movie.genre}</a></li>
+        <li>Director:<a href="/#director=${movie.director}" class="info"> ${movie.director}</a></li>
+        <li>Actors:<span> ${movie.actors}</span></li>
+        <li>Duration:<span> ${pipeDuration(movie.duration)}</span></li>
         <li>Description:<span class="description"> ${movie.description}</span> </li>
     </ul>
 </div>
